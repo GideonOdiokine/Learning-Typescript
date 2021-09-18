@@ -38,9 +38,19 @@ const user = {
     id: 1,
     name: "Gideon"
 };
-console.log(user);
+// console.log(user)
 // Type Assertion
 let cid = 1;
 let customerId = cid;
 customerId = 5;
-console.log(customerId);
+// console.log(customerId)
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+// console.log(addNum(2,4))
+// Void
+function log(message) {
+    console.log(message);
+}
+log("Odiokineh");
