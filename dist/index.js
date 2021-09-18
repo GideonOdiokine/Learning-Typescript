@@ -54,3 +54,14 @@ function log(message) {
     console.log(message);
 }
 log("Odiokineh");
+const user1 = {
+    id: 1,
+    name: "Gideon",
+    age: 22
+};
+const user2 = {
+    id: 2,
+    name: "Odiokine",
+};
+user2.id = 4;
+console.log(user2);
