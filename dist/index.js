@@ -39,3 +39,8 @@ const user = {
     name: "Gideon"
 };
 console.log(user);
+// Type Assertion
+let cid = 1;
+let customerId = cid;
+customerId = 5;
+console.log(customerId);
