@@ -64,4 +64,5 @@ const user2 = {
     name: "Odiokine",
 };
 const add = (x, y) => x + y;
-console.log(add(6, 6));
+const sub = (x, y) => x - y;
+console.log(sub(5, 3));
