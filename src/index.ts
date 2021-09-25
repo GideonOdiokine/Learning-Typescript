@@ -10,7 +10,7 @@ let arr: any[] =[1,"Gideon", true]
 
 // Tuple
 let person: [number, string, boolean]= [1, "Gideon", true]
-
+  
 // Tuple Array
 let employee: [number, string][];
 
@@ -19,4 +19,8 @@ employee = [
     [2, 'Gideon'],
     [3, 'Odiokine'],
 ]
-console.log(employee)
+
+// Union
+
+let pid: string | number;
+
