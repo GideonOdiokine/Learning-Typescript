@@ -33,7 +33,6 @@ var Direction2;
     Direction2["Right"] = "Right";
     Direction2["Left"] = "Left";
 })(Direction2 || (Direction2 = {}));
-console.log(Direction2.Left);
 const user = {
     id: 1,
     name: "Gideon"
@@ -65,4 +64,15 @@ const user2 = {
 };
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
-console.log(sub(5, 3));
+// Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now reistered`;
+    }
+}
+const mum = new Person(2, "Atim");
+console.log(mum.register());
