@@ -76,4 +76,15 @@ class Person {
 }
 const mum = new Person(2, "Atim");
 const dad = new Person(4, "Okon");
-console.log(dad.register());
+// Using classes with Interface
+class Person1 {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now registered with the ${this.id}`;
+    }
+}
+const me = new Person1(5, "Okon");
+console.log(me.register());
