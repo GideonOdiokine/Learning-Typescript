@@ -75,4 +75,5 @@ class Person {
     }
 }
 const mum = new Person(2, "Atim");
-console.log(mum.register());
+const dad = new Person(4, "Okon");
+console.log(dad.register());
