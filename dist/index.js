@@ -87,6 +87,7 @@ class Person1 {
     }
 }
 // const me = new Person1(5, "Okon")
+// How to extend classes 
 class Employee extends Person1 {
     constructor(id, name, position) {
         super(id, name);
@@ -94,4 +95,4 @@ class Employee extends Person1 {
     }
 }
 const emp = new Employee(2, "Nancy", "Developer");
-console.log(emp);
+console.log(emp.register());
