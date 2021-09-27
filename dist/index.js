@@ -86,5 +86,12 @@ class Person1 {
         return `${this.name} is now registered with the ${this.id}`;
     }
 }
-const me = new Person1(5, "Okon");
-console.log(me.register());
+// const me = new Person1(5, "Okon")
+class Employee extends Person1 {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(2, "Nancy", "Developer");
+console.log(emp);
