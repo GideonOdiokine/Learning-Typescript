@@ -87,7 +87,8 @@ class Person1 {
     }
 }
 // const me = new Person1(5, "Okon")
-// How to extend classes 
+// How to extend classes  
+// or Subclasses
 class Employee extends Person1 {
     constructor(id, name, position) {
         super(id, name);
@@ -95,4 +96,11 @@ class Employee extends Person1 {
     }
 }
 const emp = new Employee(2, "Nancy", "Developer");
-console.log(emp.register());
+// console.log(emp.register())
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['Brad', "Gideon", "Nancy"]);
+console.log(strArray);

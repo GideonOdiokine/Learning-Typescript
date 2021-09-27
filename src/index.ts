@@ -164,6 +164,20 @@ const emp = new Employee(2, "Nancy", "Developer")
 // console.log(emp.register())
 
 // Generics
-function getArray(){
-    console.log(2)
+// This is for any type of data
+function getArray(items: any[]): any[]{
+    return new Array().concat(items)
 }
+
+let numArray = getArray([1,2,3,4]);
+let strArray = getArray(['Brad', "Gideon", "Nancy"])
+
+console.log(strArray)
+
+// This to make the function reuseable by declaring if u want it to be array of num or string 
+// function getArray<T>(items: T[]): T[]{
+//     return new Array().concat(items)
+// }
+
+// let numArray = getArray<number>([1,2,3,4]);
+// let strArray = getArray<string>(['Brad', "Gideon", "Nancy"])
